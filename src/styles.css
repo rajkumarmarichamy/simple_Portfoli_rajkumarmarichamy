@@ -187,6 +187,15 @@ hr {
   display: none;
 }
 
+.form_input {
+  width: 350px;
+  height: 50px;
+  border-radius: 15px;
+  margin: 20px;
+  font-size: 1.2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
 @media only screen and (max-width: 420px) {
   .hamburger {
     display: flex;
