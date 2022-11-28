@@ -18,144 +18,58 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <section class="hero">
-      <nav>
-        <img class="logo" src="src/img/rkm logo.png" alt="rkm logo" />
-        <ul id="nav-list">
+    <header>
+      <div class="button-area">
+        <button class="hamburger">
+          <i class="fa-solid fa-bars"> Menu</i>
+        </button>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
           <li><a href="#about_me">About me</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact_me">Contact me</a></li>
         </ul>
-        <button class="hamburger" id="hamburger">
-          <i class="fa-solid fa-bars"> Menu</i>
-        </button>
       </nav>
-      <div class="hero-area">
-        <div class="hero-text">
-          <h1>Raj Kumar M</h1>
-          <p>Front End Developer / Mining Engineer</p>
-          <div class="button"><a href="#about_me">About me</a></div>
+    </header>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Raj Kumar M</h1>
+        <p>Mining Engineer</p>
+      </div>
+      <div class="socials">
+        <div>
+          <a href="https://www.linkedin.com/in/rajkumarm1999">
+            <img
+              class="social"
+              src="src/img/LinkedIn-Icon-Logo.wine.svg"
+              alt="LinkedIn-Icon-Logo"
+            />
+          </a>
         </div>
-        <div class="socials">
-          <div>
-            <a href="https://www.linkedin.com/in/rajkumarm1999">
-              <img
-                class="social"
-                src="src/img/LinkedIn-Icon-Logo.wine.svg"
-                alt="LinkedIn-Icon-Logo"
-              />
-            </a>
-          </div>
-          <div>
-            <a href="https://github.com/rajkumarmarichamy">
-              <img
-                class="social"
-                src="src/img/GitHub-Logo.wine.svg"
-                alt="GitHub-Logo"
-              />
-            </a>
-          </div>
-          <div>
-            <a href="https://www.instagram.com/twdraji/">
-              <img
-                class="social"
-                src="src/img/Instagram-Logo.wine.svg"
-                alt="Instagram-Logo"
-              />
-            </a>
-          </div>
+        <div>
+          <a href="https://github.com/rajkumarmarichamy">
+            <img
+              class="social"
+              src="src/img/GitHub-Logo.wine.svg"
+              alt="GitHub-Logo"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/twdraji/">
+            <img
+              class="social"
+              src="src/img/Instagram-Logo.wine.svg"
+              alt="Instagram-Logo"
+            />
+          </a>
         </div>
       </div>
     </section>
-    <section class="sub-section" id="about_me">
-      <div class="information">
-        <h2>About me</h2>
-        <p>
-          Hello. My Name is Raj Kumar M. I am Web designer and a Mining Engineer
-        </p>
-      </div>
-      <div class="headshot-container">
-        <img
-          class="headshot"
-          src="src/img/cacual-removebg-preview-removebg-preview.png"
-          alt="my image"
-        />
-      </div>
-    </section>
-    <hr />
-    <section class="sub-section-alternative" id="projects">
-      <h2>Projects</h2>
-      <div class="project-container">
-        <div class="project-card">
-          <img
-            class="project-image"
-            src="src/img/project 1.png"
-            alt="project on image"
-          />
-          <h3>Testimonials grid section</h3>
-          <p class="subtext">
-            This is my project and some text about it. I enjoyed making it
-          </p>
-          <hr />
-          <p>
-            <a class="project-link" href="https://github.com/rajkumarmarichamy"
-              >view here</a
-            >
-          </p>
-        </div>
-        <div class="project-card">
-          <img
-            class="project-image"
-            src="src/img/project 2.png"
-            alt="project on image"
-          />
-          <h3>Time tracking dashboard</h3>
-          <p class="subtext">
-            This is my project and some text about it. I enjoyed making it
-          </p>
-          <hr />
-          <p>
-            <a class="project-link" href="https://github.com/rajkumarmarichamy"
-              >view here</a
-            >
-          </p>
-        </div>
-        <div class="project-card">
-          <img
-            class="project-image"
-            src="src/img/project 3.png"
-            alt="project on image"
-          />
-          <h3>Intro component with sign-up form</h3>
-          <p class="subtext">
-            This is my project and some text about it. I enjoyed making it
-          </p>
-          <hr />
-          <p>
-            <a class="project-link" href="https://github.com/rajkumarmarichamy"
-              >view here</a
-            >
-          </p>
-        </div>
-        <div class="project-card">
-          <img
-            class="project-image"
-            src="src/img/project 4.png"
-            alt="project on image"
-          />
-          <h3>Huddle landing page with curved sections</h3>
-          <p class="subtext">
-            This is my project and some text about it. I enjoyed making it
-          </p>
-          <hr />
-          <p>
-            <a class="project-link" href="https://github.com/rajkumarmarichamy"
-              >view here</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
+    <section class="sub-section" id="about_me"></section>
+    <section class="sub-section-alternative" id="projects"></section>
     <footer id="contact_me">
       <h2>Contact me</h2>
       <form action="https://formsubmit.co/twdraji1999@gmail.com" method="POST">
@@ -168,7 +82,7 @@
           required
         /><br />
         <input
-          class="form_input"
+          class="form_input text"
           type="text"
           name="message"
           placeholder="write your message here"

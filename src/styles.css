@@ -2,97 +2,75 @@ body {
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
+  font-size: 40px;
 }
 
-section {
-  height: 500px;
-  background-color: white;
+:root {
+  --border: solid black 1px;
 }
 
 .hero {
   background-color: rgb(249, 183, 183);
-  height: 75vh;
   color: white;
-  font-size: 40px;
+  height: 450px;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+}
+
+.sub-section {
+  height: 450px;
+  background-color: white;
+  display: flex;
+}
+
+.sub-section-alternative {
+  height: 450px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: solid black 1px;
 }
 
 footer {
+  height: auto;
+  display: flex;
+  flex-direction: column;
   background-color: black;
   color: white;
   text-align: center;
-  padding: 80px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-ul {
-  display: flex;
-  list-style-type: none;
-  width: 500px;
-  justify-content: space-between;
-  font-size: 25px;
-  align-items: center;
-}
-
-.hamburger:focus {
-  outline: 0;
-}
-
-li {
-  display: flex;
-  justify-content: center;
-  width: 200px;
-  text-decoration: none;
-}
-
-h1 {
-  font-size: 90px;
-  margin: 0;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 45px;
 }
 
-p {
-  margin: 0;
-  font-size: 30px;
-  font-weight: 300;
+.form_input {
+  height: 50px;
+  border-radius: 15px;
+  margin: 10px;
+  font-size: 1.2rem;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
 }
 
-.subtext {
-  font-size: 15px;
-  font-weight: 300;
-}
-
-.hero-area {
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.hero-text {
-  margin-left: 80px;
-  margin-bottom: 200px;
+.text {
+  height: 150px;
 }
 
 .button {
   width: 200px;
   height: 55px;
   border-radius: 30px;
-  background-color: rgba(249, 62, 171, 0.944);
+  background-color: pink;
   text-align: center;
   font-size: 30px;
   font-weight: 300;
   padding-top: 5px;
   margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .button:hover {
@@ -102,6 +80,79 @@ p {
 .button:active {
   background-color: darkslategray;
   color: darkmagenta;
+}
+
+header {
+  background-color: rgb(249, 183, 183);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button-area {
+  display: flex;
+  flex-grow: 1;
+  height: 40px;
+}
+
+.hamburger {
+  display: flex;
+  cursor: pointer;
+  background-color: rgb(249, 183, 183);
+  border-radius: 25px;
+  align-items: center;
+  background-color: none;
+  justify-content: center;
+}
+
+.nav-bar {
+  display: none;
+  padding-top: 0;
+  transition: 0.2s;
+}
+
+.nav-bar ul {
+  display: block;
+  width: auto;
+  margin: 80px auto 0 auto;
+  text-align: center;
+  transition: 0.5s;
+  list-style-type: none;
+  font-size: 25px;
+  align-items: center;
+  padding-left: 0px;
+}
+
+.nav-bar ul li {
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 0px;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.nav-bar ul li a:hover {
+  color: blue;
+  background-color: white;
+}
+
+.nav-bar.active {
+  display: block;
+}
+
+.nav-bar ul li a.active {
+  color: blue;
+  background-color: white;
 }
 
 .socials {
@@ -116,191 +167,6 @@ p {
   margin: 15px;
 }
 
-.logo {
-  height: 80px;
-  margin: 30px;
-}
-
-.sub-section {
-  display: flex;
-  justify-content: space-around;
-  padding: 80px;
-}
-
-.sub-section-alternative {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 80px;
-}
-
-.headshot {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-}
-
-.headshot-container {
-  display: flex;
-  align-items: center;
-}
-
-.project-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 300px;
-  height: 400px;
-  box-shadow: 7px 6px 23px 1px rgba(72, 83, 89, 1);
-  border-radius: 15px;
-}
-
-.project-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.project-image {
-  margin-top: 25px;
-  width: 250px;
-  border-radius: 125px;
-}
-
-.project-link {
-  text-decoration: none;
-  color: coral;
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-hr {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-.hamburger {
-  display: none;
-}
-
-.form_input {
-  width: 350px;
-  height: 50px;
-  border-radius: 15px;
-  margin: 20px;
-  font-size: 1.2rem;
-  font-family: "Times New Roman", Times, serif;
-}
-
-@media only screen and (max-width: 420px) {
-  .hamburger {
-    display: flex;
-    border: 0;
-    background-color: transparent;
-    color: white;
-    font-size: 20px;
-    margin: 20px;
-    align-self: flex-end;
-  }
-
-  .project-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  section,
-  footer {
-    height: auto;
-  }
-
-  nav {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-  }
-
-  .hero {
-    flex-grow: 1;
-    height: 60vh;
-  }
-
-  h1 {
-    font-size: 45px;
-  }
-
-  h2 {
-    font-size: 25px;
-  }
-
-  p {
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  ul {
-    display: none;
-    background-color: rgb(249, 183, 183);
-    font-size: 20px;
-  }
-
-  li {
-    width: 120px;
-  }
-
-  .hero-text {
-    margin-left: 15px;
-    margin-bottom: 50px;
-    flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-
-  .socials {
-    padding-bottom: 25px;
-    flex-direction: row;
-    margin-bottom: 10px;
-  }
-
-  .button {
-    width: 100px;
-    height: 27.5px;
-    border-radius: 30px;
-    font-size: 15px;
-    font-weight: 300;
-    padding-top: 5px;
-    margin-top: 20px;
-  }
-
-  .project-card {
-    margin: 15px;
-  }
-
-  .sub-section {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-around;
-    align-items: center;
-    padding: 80px;
-  }
-
-  .hero-area {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  ul.show {
-    display: block;
-  }
+ul.show {
+  display: block;
 }
