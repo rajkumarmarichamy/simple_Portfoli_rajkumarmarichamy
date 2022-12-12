@@ -143,9 +143,7 @@ body {
   font-size: 25px;
 }
 
-.Masters,
-.Bachelors,
-.School {
+.display_card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,19 +154,16 @@ body {
   box-shadow: var(--box-shadow);
 }
 
-.Masters > h1,
-.Bachelors > h1,
-.School > h1 {
+.display_card > h1 {
   font-size: 1.2rem;
 }
 
-.degree_name {
+.degree_name,
+.project_name {
   text-align: center;
 }
 
-.Masters > img,
-.Bachelors > img,
-.School > img {
+.display_card > img {
   height: 100px;
   width: 100px;
   margin: 15px;
@@ -181,9 +176,7 @@ body {
   font-size: 1rem;
 }
 
-.Masters > article,
-.Bachelors > article,
-.School > article {
+.display_card > article {
   text-align: justify;
   padding: 10px;
   font-size: 1rem;
@@ -196,7 +189,8 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   border: var(--border);
 }
 
@@ -278,6 +272,16 @@ form {
     width: 800px;
     justify-content: center;
     justify-self: center;
+  }
+
+  .my_image {
+    height: 300px;
+    width: 300px;
+  }
+
+  .display_card {
+    box-shadow: none;
+    border: none;
   }
 
   /* section,
