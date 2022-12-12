@@ -182,6 +182,44 @@ body {
   font-size: 1rem;
 }
 
+hr {
+  display: none;
+  color: black;
+  border: var(--border);
+  width: 85%;
+  height: 10px;
+  background-color: brown;
+}
+.project_image_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: var(--border);
+  width: auto;
+  height: auto;
+}
+
+#project_image {
+  width: 250px;
+  height: 220px;
+  border-radius: 0%;
+}
+
+.left_arrow,
+.right_arrow {
+  width: 35px;
+  height: 50px;
+  background-color: none;
+  border-radius: 50%;
+}
+
+.project_image_container > button {
+  width: auto;
+  height: auto;
+  background-color: white;
+  border: solid white 1px;
+}
+
 /* -----------SUB SECTION ANTERNATIVE STYLES------ */
 
 .sub-section-alternative {
@@ -282,6 +320,10 @@ form {
   .display_card {
     box-shadow: none;
     border: none;
+  }
+
+  hr {
+    display: block;
   }
 
   /* section,
