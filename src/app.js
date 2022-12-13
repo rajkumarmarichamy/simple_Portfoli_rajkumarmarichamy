@@ -32,7 +32,7 @@ function right() {
 }
 
 left_arrow = document.querySelector(".left_arrow");
-left_arrow.onclick = left();
+left_arrow.onclick = left;
 
 right_arrow = document.querySelector(".right_arrow");
-right_arrow.onclick = right();
+right_arrow.onclick = right;
