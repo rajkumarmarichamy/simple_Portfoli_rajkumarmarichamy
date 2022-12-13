@@ -141,6 +141,8 @@ body {
 .sub-section > h1,
 .sub-section-alternative > h1 {
   font-size: 25px;
+  border-bottom: solid rgb(254, 156, 51) 2px;
+  border-top: solid rgb(254, 156, 51) 2px;
 }
 
 .display_card {
@@ -190,11 +192,12 @@ hr {
   height: 10px;
   background-color: brown;
 }
+
 .project_image_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: var(--border);
+  /* border: var(--border); */
   width: auto;
   height: auto;
 }
@@ -207,17 +210,16 @@ hr {
 
 .left_arrow,
 .right_arrow {
-  width: 35px;
-  height: 50px;
-  background-color: none;
   border-radius: 50%;
 }
 
-.project_image_container > button {
-  width: auto;
-  height: auto;
-  background-color: white;
-  border: solid white 1px;
+.project_image_container > .button1 {
+  width: 15px;
+  height: 15px;
+}
+
+.project_image_container > .button1:hover {
+  background-color: rgb(49, 241, 152);
 }
 
 /* -----------SUB SECTION ANTERNATIVE STYLES------ */
@@ -304,6 +306,7 @@ form {
 @media only screen and (min-width: 800px) {
   body {
     justify-content: center;
+    font-size: 60px;
   }
 
   .entire {
@@ -326,8 +329,13 @@ form {
     display: block;
   }
 
-  /* section,
-  footer {
-    max-width: 800px;
-  } */
+  #project_image {
+    width: 500px;
+    height: 440px;
+  }
+
+  .project_image_container > .button1 {
+    width: 30px;
+    height: 30px;
+  }
 }
