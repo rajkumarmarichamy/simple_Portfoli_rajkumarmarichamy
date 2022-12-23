@@ -184,6 +184,23 @@ body {
   font-size: 1rem;
 }
 
+.display_card > button {
+  background-color: rgb(107, 62, 149);
+  border-radius: 10px;
+  height: 40px;
+}
+
+.display_card > button > a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.display_card > button:active {
+  font-size: 1rem;
+}
+
 hr {
   display: none;
   color: black;
