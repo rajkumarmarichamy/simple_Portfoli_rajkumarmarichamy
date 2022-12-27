@@ -14,6 +14,54 @@ body {
   --box-shadow: 6px 7px 17px -3px rgba(0, 0, 0, 0.63);
 }
 
+#ham {
+  display: block;
+  position: fixed;
+  color: rgb(0, 0, 0);
+  border-radius: 0px 30px 30px 0px;
+  background-color: rgba(199, 193, 82, 0.887);
+  width: 50px;
+  left: 0;
+}
+
+#ham:active {
+  transform: rotateY(30deg);
+}
+
+nav {
+  display: none;
+  position: fixed;
+  width: 175px;
+  background-color: rgba(199, 193, 82, 0.887);
+  top: 40px;
+  left: 25px;
+  border-radius: 50px;
+  transition: 0.9s;
+  transition-duration: 0.1s;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+nav > ul > li {
+  text-decoration: none;
+  line-height: 30px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+nav > ul > li > a:active {
+  color: white;
+  background-color: none;
+}
+
 /* -------------HERO SECTION STYLES------------ */
 
 .hero {
@@ -50,81 +98,6 @@ body {
   text-align: justify;
   padding: 10px;
 }
-
-/* header {
-  background-color: rgb(249, 183, 183);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: var(--border);
-} */
-
-/* .button-area {
-  display: flex;
-  flex-grow: 1;
-  height: 40px;
-  border: var(--border);
-}
-
-.hamburger {
-  display: flex;
-  cursor: pointer;
-  background-color: rgb(249, 183, 183);
-  border-radius: 25px;
-  align-items: center;
-  background-color: none;
-  justify-content: center;
-} */
-
-/* .nav-bar {
-  display: none;
-  padding-top: 0;
-  transition: 0.2s;
-}
-
-.nav-bar ul {
-  display: block;
-  width: auto;
-  margin: 80px auto 0 auto;
-  text-align: center;
-  transition: 0.5s;
-  list-style-type: none;
-  font-size: 25px;
-  align-items: center;
-  padding-left: 0px;
-}
-
-.nav-bar ul li {
-  align-items: center;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-left: 0px;
-}
-
-.nav-bar ul li a {
-  display: block;
-  color: white;
-  font-size: 20px;
-  padding: 10px;
-  border-radius: 50px;
-  transition: 0.2s;
-  margin: 0 5px;
-  text-decoration: none;
-}
-
-.nav-bar ul li a:hover {
-  color: blue;
-  background-color: white;
-}
-
-.nav-bar.active {
-  display: block;
-}
-
-.nav-bar ul li a.active {
-  color: blue;
-  background-color: white;
-} */
 
 /* -----SUB SECTION STYLES-------- */
 
@@ -188,6 +161,21 @@ body {
   background-color: rgb(107, 62, 149);
   border-radius: 10px;
   height: 40px;
+  animation: btn 3s linear 0s infinite;
+}
+
+@keyframes btn {
+  0% {
+    background-color: rgb(107, 62, 149);
+  }
+
+  50% {
+    background-color: brown;
+  }
+
+  100% {
+    background-color: rgb(107, 62, 149);
+  }
 }
 
 .display_card > button > a {
@@ -237,6 +225,25 @@ hr {
 
 .project_image_container > .button1:hover {
   background-color: rgb(49, 241, 152);
+}
+
+.horizon_box {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizon_box > .display_card > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  line-height: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+li {
+  font-size: 1rem;
 }
 
 /* -----------SUB SECTION ANTERNATIVE STYLES------ */
@@ -354,5 +361,21 @@ form {
   .project_image_container > .button1 {
     width: 30px;
     height: 30px;
+  }
+
+  .horizon_box > hr {
+    display: none;
+  }
+
+  .horizon_box > .display_card {
+    width: 250px;
+  }
+
+  .horizon_box {
+    display: flex;
+    flex-direction: row;
+    /* border: var(--border); */
+    justify-content: center;
+    align-items: center;
   }
 }

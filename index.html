@@ -19,22 +19,17 @@
   </head>
   <body>
     <div class="entire">
-      <!-- <header>
-      <div class="button-area">
-        <button class="hamburger">
-          <i class="fa-solid fa-bars"> Menu</i>
-        </button>
-      </div>
-      <nav class="nav-bar">
+      <i class="fa-solid fa-bars" id="ham" onclick="menu()"></i>
+      <nav>
         <ul>
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about_me">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact_me">Contact me</a></li>
+          <li><a href="#home" onclick="menu()">Home</a></li>
+          <li><a href="#acedamic_profile" onclick="menu()">Academics</a></li>
+          <li><a href="#projects" onclick="menu()">Projects</a></li>
+          <li><a href="#skills" onclick="menu()">Skills</a></li>
+          <li><a href="#contact_me" onclick="menu()">Contact me</a></li>
         </ul>
       </nav>
-    </header> -->
-      <section class="hero">
+      <section class="hero" id="home">
         <img
           class="my_image"
           src="src\img\cacual-removebg-preview-removebg-preview.png"
@@ -149,12 +144,48 @@
             only one game in this web page, that is Rock Paper & scissor funny
             game isn't??.
           </article>
-          <button>
+          <button type="button">
             <a href="https://rajkumarmarichamy.github.io/raj-games/"
               >Take me there</a
             >
           </button>
+        </div>
+      </section>
+      <hr />
+      <section class="sub-section-alternative" id="skills">
+        <h1>My skill sets</h1>
+        <div class="horizon_box">
+          <div class="display_card">
+            <h1 class="project_name">Front-end web development</h1>
+            <ul>
+              <li>HTML | CSS | JS</li>
+              <li>Python | Tkinker</li>
+              <li>VS code | Pycharm</li>
+              <li>GitHub | Bitbucket</li>
+            </ul>
+          </div>
           <hr />
+          <div class="display_card">
+            <h1 class="project_name">Mining Engineering</h1>
+            <ul>
+              <li>Solid Edge software</li>
+              <li>Slide | Phase2 | Geoslope</li>
+              <li>MS office</li>
+              <li>Tally - basic level</li>
+            </ul>
+          </div>
+          <hr />
+          <div class="display_card">
+            <h1 class="project_name">Electronics and Communication</h1>
+            <ul>
+              <li>Arduino IDE</li>
+              <li>WSN | IoT</li>
+              <li>Zigbee | XCTU</li>
+              <li>LORA | Ebyte</li>
+              <li>ThingSpeak</li>
+              <li>PythonAnywhere</li>
+            </ul>
+          </div>
         </div>
       </section>
       <footer id="contact_me">

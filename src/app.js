@@ -36,3 +36,15 @@ left_arrow.onclick = left;
 
 right_arrow = document.querySelector(".right_arrow");
 right_arrow.onclick = right;
+
+let menu_open = false;
+
+function menu() {
+  if (menu_open) {
+    document.querySelector("nav").style.display = "none";
+    menu_open = false;
+  } else if (!menu_open) {
+    document.querySelector("nav").style.display = "block";
+    menu_open = true;
+  }
+}
