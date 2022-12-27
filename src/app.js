@@ -1,9 +1,3 @@
-// hamburger = document.querySelector(".hamburger");
-// hamburger.onclick = function () {
-//   navBar = document.querySelector(".nav-bar");
-//   navBar.classList.toggle("active");
-// };
-
 var i = 0;
 var images = [];
 
@@ -41,10 +35,10 @@ let menu_open = false;
 
 function menu() {
   if (menu_open) {
-    document.querySelector("nav").style.display = "none";
+    document.querySelector("nav").classList.replace("act", "nav");
     menu_open = false;
   } else if (!menu_open) {
-    document.querySelector("nav").style.display = "block";
+    document.querySelector("nav").classList.replace("nav", "act");
     menu_open = true;
   }
 }
