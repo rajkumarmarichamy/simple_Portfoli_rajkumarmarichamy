@@ -42,10 +42,6 @@ body {
 }
 
 .nav {
-  display: none;
-}
-
-.act {
   display: block;
   position: fixed;
   width: 175px;
@@ -53,11 +49,50 @@ body {
   top: 40px;
   left: 25px;
   border-radius: 50px;
-  transition: 0.9s;
-  transition-duration: 0.1s;
+  transition: opacity;
 }
 
-.act > ul {
+.hidden {
+  display: none;
+}
+
+.navtransclose {
+  animation: opac 0.5s linear;
+}
+
+@keyframes opac {
+  0% {
+    opacity: 1;
+    width: 175px;
+    height: 230px;
+  }
+
+  100% {
+    opacity: 0.4;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.navtransopen {
+  animation: opac2 0.5s linear;
+}
+
+@keyframes opac2 {
+  0% {
+    opacity: 0.4;
+    width: 50px;
+    height: 50px;
+  }
+
+  100% {
+    opacity: 1;
+    width: 175px;
+    height: 230px;
+  }
+}
+
+.nav > ul {
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -413,10 +448,6 @@ form {
   }
 
   .nav {
-    display: none;
-  }
-
-  .act {
     display: flex;
     position: fixed;
     width: 175px;

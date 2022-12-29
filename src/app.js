@@ -31,14 +31,42 @@ left_arrow.onclick = left;
 right_arrow = document.querySelector(".right_arrow");
 right_arrow.onclick = right;
 
-let menu_open = false;
+let whileOpening = true;
+
+function navtransopen() {
+  document
+    .querySelector("nav")
+    .classList.replace("navtransclose", "navtransopen");
+}
+
+function navtransclose() {
+  document
+    .querySelector("nav")
+    .classList.replace("navtransopen", "navtransclose");
+}
 
 function menu() {
-  if (menu_open) {
-    document.querySelector("nav").classList.replace("act", "nav");
-    menu_open = false;
-  } else if (!menu_open) {
-    document.querySelector("nav").classList.replace("nav", "act");
-    menu_open = true;
+  if (whileOpening) {
+    document.querySelector("nav").classList.toggle("hidden");
+    navtransopen();
+    whileOpening = false;
+  } else if (!whileOpening) {
+    navtransclose();
+    setTimeout(
+      () => document.querySelector("nav").classList.toggle("hidden"),
+      400
+    );
+    // document.querySelector("nav").classList.toggle("hidden");
+    whileOpening = true;
   }
+
+  // setTimeout(navtrans, 500);
+
+  // if (menu_open) {
+  //   document.querySelector("nav").classList.replace("act", "nav");
+  //   menu_open = false;
+  // } else if (!menu_open) {
+  //   document.querySelector("nav").classList.replace("nav", "act");
+  //   menu_open = true;
+  // }
 }
