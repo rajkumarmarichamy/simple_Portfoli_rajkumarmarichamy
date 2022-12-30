@@ -1,19 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   display: flex;
   font-size: 40px;
 }
-
-/* .menubar {
-  border: var(--border);
-  display: block;
-  position: fixed;
-  width: 250px;
-  height: 400px;
-  left: 5px;
-  top: 150px;
-  background-color: aqua;
-} */
 
 .entire {
   display: flex;
@@ -456,11 +449,13 @@ form {
     top: 35vh;
     left: 70px;
     border-radius: 50px;
-    transition: 0.9s;
-    transition-duration: 0.1s;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .hidden {
+    display: none;
   }
 
   nav > ul {

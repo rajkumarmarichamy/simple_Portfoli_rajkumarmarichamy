@@ -56,17 +56,6 @@ function menu() {
       () => document.querySelector("nav").classList.toggle("hidden"),
       400
     );
-    // document.querySelector("nav").classList.toggle("hidden");
     whileOpening = true;
   }
-
-  // setTimeout(navtrans, 500);
-
-  // if (menu_open) {
-  //   document.querySelector("nav").classList.replace("act", "nav");
-  //   menu_open = false;
-  // } else if (!menu_open) {
-  //   document.querySelector("nav").classList.replace("nav", "act");
-  //   menu_open = true;
-  // }
 }
