@@ -372,6 +372,13 @@ form {
   /* border: var(--border); */
 }
 
+a {
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: aliceblue;
+}
+
 @media only screen and (min-width: 800px) {
   body {
     justify-content: center;
