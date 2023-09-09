@@ -355,7 +355,7 @@ form {
 
 .button:active {
   background-color: darkslategray;
-  color: darkmagenta;
+  color: rgb(157, 54, 157);
 }
 
 .socials {
